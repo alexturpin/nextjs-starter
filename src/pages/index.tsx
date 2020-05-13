@@ -1,6 +1,13 @@
 import Head from 'next/head';
+import { useEffect } from 'react';
 
 export default function Home() {
+  const test = [1];
+  const foobarlol = 123;
+  useEffect(() => {
+    console.log(test);
+  }, []);
+
   return (
     <div className="container">
       <Head>
